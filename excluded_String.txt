@@ -1,0 +1,7 @@
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/ViewModel/MainViewModel.swift -> "Fetch Restaurant Caregory Items"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/DataSource/Restaurant/RestaurantRemoteDataSource.swift -> "Restaurant Remote Data Json Download Fail"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/DataSource/Restaurant/RestaurantRemoteDataSource.swift -> "Restaurant Remote Data Json Download Fail"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/DataSource/Restaurant/RestaurantRemoteDataSource.swift -> "Restaurant Remote Data Json Download Fail"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/DataSource/Restaurant/RestaurantRemoteDataSource.swift -> "Response StatusCode : \(response.statusCode)"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/DataSource/Restaurant/RestaurantRemoteDataSource.swift -> "Restaurant Remote Data Json Download Success"
+/Users/kyu/sdev3/sample/UIKit+SPM_2/StealPlateSwift/ViewController/MainViewController.swift -> "Refresh Restaurant Data"
