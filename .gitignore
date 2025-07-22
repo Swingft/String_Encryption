@@ -1,0 +1,5 @@
+.DS_Store
+.build/
+.swiftpm/
+extracted_literals.json
+
