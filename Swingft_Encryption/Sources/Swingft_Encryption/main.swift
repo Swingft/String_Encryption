@@ -83,7 +83,7 @@ for fileURL in swiftFiles {
 
 saveToText(entries: allEntries, outputPath: "excluded_String.txt")
 
-let pythonScriptPath = "./SwingftSecure.py"
+let pythonScriptPath = "./SwingftEncryption.py"
 let process = Process()
 process.executableURL = URL(fileURLWithPath: "/usr/bin/python3")
 process.arguments = [pythonScriptPath, sourcePath, "excluded_String.txt"]
