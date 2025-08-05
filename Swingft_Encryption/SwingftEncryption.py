@@ -48,13 +48,33 @@ enum SwingftKey {{
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(lines)
 
+def remove_comments_and_track(code):
+    string_pattern = re.compile(r'"(\\.|[^"\\])*"')
+    line_comment = re.compile(r'//.*')
+    block_comment = re.compile(r'/\*[\s\S]*?\*/')
+
+    comment_spans = []
+
+    for match in line_comment.finditer(code):
+        comment_spans.append((match.start(), match.end()))
+    for match in block_comment.finditer(code):
+        comment_spans.append((match.start(), match.end()))
+
+    comment_spans.sort()
+    return comment_spans
+
+def is_within_comment(pos, comment_spans):
+    for start, end in comment_spans:
+        if start <= pos < end:
+            return True
+    return False
 
 def detect_main_entry(files):
     for path in files:
         try:
             with open(path, encoding='utf-8') as f:
                 content = f.read()
-            if re.search(r'@main\s+struct\s+\w+\s*:\s*App', content):
+            if re.search(r'@main\s+(struct|class)\s+\w+\s*:\s*App', content):
                 return path, 'swiftui'
             if re.search(r'class\s+\w+\s*:\s*UIResponder\s*,\s*UIApplicationDelegate', content):
                 return path, 'uikit'
@@ -157,19 +177,23 @@ def patch_entry(files, chunk_count):
     print(f"진입점 패치 완료: {entry_path} ({entry_type})")
     return entry_path, entry_type
 
-def insert_global_import(swift_files):
-    for path in swift_files:
-        with open(path, encoding='utf-8') as f:
-            lines = f.readlines()
-        if any("import StringSecurity" in line for line in lines):
-            continue
-        insert_idx = 0
-        for i, line in enumerate(lines):
-            if line.strip().startswith("import "):
-                insert_idx = i + 1
-        lines.insert(insert_idx, "import StringSecurity\n")
-        with open(path, "w", encoding="utf-8") as f:
-            f.writelines(lines)
+def insert_global_import(encrypted_files):
+    for path in encrypted_files:
+        try:
+            with open(path, encoding='utf-8') as f:
+                lines = f.readlines()
+            if any("import StringSecurity" in line for line in lines):
+                continue
+            insert_idx = 0
+            for i, line in enumerate(lines):
+                if line.strip().startswith("import "):
+                    insert_idx = i + 1
+            lines.insert(insert_idx, "import StringSecurity\n")
+            with open(path, "w", encoding="utf-8") as f:
+                f.writelines(lines)
+        except Exception as e:
+            print(f"import 삽입 실패: {path} – {e}")
+
 
 def copy_StringSecurity_folder(source_root):
     local_path = os.path.join(os.path.dirname(__file__), "StringSecurity")
@@ -211,8 +235,21 @@ def load_excluded_numbers(path: str):
     return result
 
 def encrypt_and_insert(source_root: str, excluded_path: str):
+    target_root = None
+    for dirpath, dirnames, filenames in os.walk(source_root):
+        for d in dirnames:
+            if d.endswith('.xcodeproj') or d.endswith('.xcworkspace'):
+                target_root = dirpath
+                break
+        if target_root:
+            break
+
+    if not target_root:
+        print(".xcodeproj 또는 .xcworkspace 디렉토리를 찾을 수 없습니다.")
+        return
+
     swift_files = []
-    for dirpath, _, filenames in os.walk(source_root):
+    for dirpath, _, filenames in os.walk(target_root):
         for file in filenames:
             if file.endswith(".swift") and not file.startswith(".") and file != "Package.swift":
                 swift_files.append(os.path.join(dirpath, file))
@@ -231,20 +268,42 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
 
     module_dir = os.path.dirname(entry_path)
     same_module_files = [f for f in swift_files if f.startswith(module_dir + os.sep)]
-    if len(same_module_files) < count:
-        print(f" 같은 모듈 내 Swift 파일 수 부족: {len(same_module_files)}개")
-        return
-    random.shuffle(same_module_files)
+
+    preferred_files = [f for f in same_module_files if f != entry_path]
+    fallback_files = same_module_files[:]
+
+    random.shuffle(preferred_files)
+    random.shuffle(fallback_files)
+
+    used_files = set()
+
     for i in range(count):
+        ef = mf = None
+
+        enc_candidates = [f for f in preferred_files if f not in used_files]
+        if not enc_candidates:
+            enc_candidates = [f for f in fallback_files if f not in used_files]
+        ef = enc_candidates[0] if enc_candidates else random.choice(fallback_files)
+        used_files.add(ef)
+
+        mask_candidates = [f for f in preferred_files if f not in used_files]
+        if not mask_candidates:
+            mask_candidates = [f for f in fallback_files if f not in used_files]
+        mf = mask_candidates[0] if mask_candidates else ef  # 동일 파일 fallback
+        used_files.add(mf)
+
         encoded = ", ".join(str(b) for b in encoded_chunks[i])
         mask = ", ".join(str(b) for b in masks[i])
-        code_e = f"extension SwingftKey {{\n    static let encoded{i+1}: [UInt8] = [{encoded}]\n}}\n"
-        code_m = f"extension SwingftKey {{\n    static let mask{i+1}: [UInt8] = [{mask}]\n}}\n"
-        ef = mf = same_module_files[i]
+
+        code_e = f"\nextension SwingftKey {{\n    static let encoded{i+1}: [UInt8] = [{encoded}]\n}}\n"
+        code_m = f"\nextension SwingftKey {{\n    static let mask{i+1}: [UInt8] = [{mask}]\n}}\n"
+
         with open(ef, "a", encoding="utf-8") as f:
             f.write(code_e)
         with open(mf, "a", encoding="utf-8") as f:
             f.write(code_m)
+
+
 
     excluded_map = load_excluded_set(excluded_path)
     excluded_numbers = load_excluded_numbers(excluded_path)
@@ -257,7 +316,12 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
             with open(file_path, encoding="utf-8") as f:
                 content = f.read()
             abs_path = os.path.abspath(file_path)
+
+            comment_spans = remove_comments_and_track(content)
+
             def replace_string(m):
+                if is_within_comment(m.start(), comment_spans):
+                    return m.group(0)
                 raw = m.group(0)
                 clean = raw.strip('"')
                 if clean in excluded_map.get(abs_path, set()):
@@ -266,6 +330,7 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
                 ct = cipher.encrypt(nonce, clean.encode(), None)
                 b64 = base64.b64encode(nonce + ct).decode()
                 return f'SwingftEncryption.resolve("{b64}")'
+
             def replace_number(m):
                 prefix, number = m.group(1), m.group(2)
                 full_decl = excluded_numbers.get(abs_path, {}).get(number)
@@ -276,13 +341,14 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
                 return f"{prefix}{inferred_type}({encrypted})!"
             new_content = re.sub(string_pattern, replace_string, content)
             new_content = re.sub(number_pattern, replace_number, new_content)
+
             if new_content != content:
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(new_content)
         except Exception as e:
             print(f" 암호화 실패: {file_path} – {e}")
 
-    insert_global_import(swift_files)
+    insert_global_import(encrypted_files)
     copy_StringSecurity_folder(source_root)
 
 if __name__ == "__main__":
