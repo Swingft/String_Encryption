@@ -348,7 +348,7 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
         except Exception as e:
             print(f" 암호화 실패: {file_path} – {e}")
 
-    insert_global_import(encrypted_files)
+    insert_global_import(swift_files)
     copy_StringSecurity_folder(source_root)
 
 if __name__ == "__main__":
