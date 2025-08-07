@@ -1,6 +1,7 @@
 
-import os
+import ast
 import re
+import os
 import sys
 import base64
 import random
@@ -249,9 +250,10 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
         return
 
     swift_files = []
-    for dirpath, _, filenames in os.walk(target_root):
+    for dirpath, dirnames, filenames in os.walk(target_root):
+        dirnames[:] = [d for d in dirnames if not d.startswith('.')]
         for file in filenames:
-            if file.endswith(".swift") and not file.startswith(".") and file != "Package.swift":
+            if not file.startswith('.') and file.endswith(".swift") and file != "Package.swift":
                 swift_files.append(os.path.join(dirpath, file))
     if not swift_files:
         print("Swift 파일 없음")
@@ -322,14 +324,34 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
             def replace_string(m):
                 if is_within_comment(m.start(), comment_spans):
                     return m.group(0)
+
                 raw = m.group(0)
-                clean = raw.strip('"')
+                try:
+                    clean = ast.literal_eval(raw)
+                except Exception:
+                    clean = raw.strip('"')
+            
+                context_window = 30
+                prefix = content[max(0, m.start() - context_window): m.start()]
+                if re.search(r'@\w+\s*\($', prefix):
+                    return raw
                 if clean in excluded_map.get(abs_path, set()):
                     return raw
-                nonce = os.urandom(12)
-                ct = cipher.encrypt(nonce, clean.encode(), None)
-                b64 = base64.b64encode(nonce + ct).decode()
-                return f'SwingftEncryption.resolve("{b64}")'
+                for sset in excluded_map.values():
+                    for ex in sset:
+                            if ex in clean:
+                                print(f"excluded by fallback match: '{ex}' in '{clean}'")
+                            return raw
+                try:
+                    nonce = os.urandom(12)
+                    ct = cipher.encrypt(nonce, clean.encode('utf-8'), None)
+                    b64 = base64.b64encode(nonce + ct).decode('utf-8')
+                    return f'SwingftEncryption.resolve("{b64}")'
+                except Exception as e:
+                    print(f"암호화 실패: {clean} in {abs_path} – {e}")
+                    return raw
+
+
 
             def replace_number(m):
                 prefix, number = m.group(1), m.group(2)
