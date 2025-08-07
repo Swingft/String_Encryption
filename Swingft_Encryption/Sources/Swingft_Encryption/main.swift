@@ -81,6 +81,10 @@ for fileURL in swiftFiles {
 
     let attributeMatches = AttributeStringExtractor.extract(from: source)
     allEntries.append(contentsOf: attributeMatches.map { ("STR", "\(file) -> \"\($0.0)\"") })
+    
+    let labeledExtractor = LabeledArgumentStringExtractor(viewMode: .sourceAccurate, filePath: file)
+    labeledExtractor.walk(tree)
+    allEntries.append(contentsOf: labeledExtractor.excludedStrings.map { ("STR: \($0.0)", $0.1) })
 
     if !excludedKeywords.isEmpty {
         let matched = ConfigLoader.extractExcludedStrings(from: source, filePath: file, excludedList: excludedKeywords)
