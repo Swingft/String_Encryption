@@ -7,7 +7,7 @@ final class DebugStringExtractor: SyntaxVisitor {
 
     private let debugFunctions: Set<String> = [
         "print", "NSLog", "debugPrint", "assert", "fatalError",
-        "error", "info", "warning", "log","debug"
+        "error", "info", "warning", "log","debug","annotation"
     ]
 
     init(viewMode: SyntaxTreeViewMode = .sourceAccurate, filePath: String) {

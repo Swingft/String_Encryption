@@ -75,6 +75,13 @@ for fileURL in swiftFiles {
     constVisitor.walk(tree)
     allEntries.append(contentsOf: constVisitor.constants)
 
+    let localizedExtractor = LocalizedStringExtractor(filePath: file)
+    localizedExtractor.walk(tree)
+    allEntries.append(contentsOf: localizedExtractor.excludedStrings.map { ("STR: \($0.0)", $0.1) })
+
+    let attributeMatches = AttributeStringExtractor.extract(from: source)
+    allEntries.append(contentsOf: attributeMatches.map { ("STR", "\(file) -> \"\($0.0)\"") })
+
     if !excludedKeywords.isEmpty {
         let matched = ConfigLoader.extractExcludedStrings(from: source, filePath: file, excludedList: excludedKeywords)
         allEntries.append(contentsOf: matched.map { ("STR: \($0.0)", $0.1) })
