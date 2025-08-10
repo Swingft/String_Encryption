@@ -1,4 +1,3 @@
-
 import os
 import re
 import sys
@@ -48,24 +47,22 @@ enum SwingftKey {{
     with open(path, 'w', encoding='utf-8') as f:
         f.writelines(lines)
 
+
 def remove_comments_and_track(code):
-    string_pattern = re.compile(r'"(\\.|[^"\\])*"')
+    
     line_comment = re.compile(r'//.*')
     block_comment = re.compile(r'/\*[\s\S]*?\*/')
-
     comment_spans = []
-
-    for match in line_comment.finditer(code):
-        comment_spans.append((match.start(), match.end()))
-    for match in block_comment.finditer(code):
-        comment_spans.append((match.start(), match.end()))
-
+    for m in line_comment.finditer(code):
+        comment_spans.append((m.start(), m.end()))
+    for m in block_comment.finditer(code):
+        comment_spans.append((m.start(), m.end()))
     comment_spans.sort()
     return comment_spans
 
 def is_within_comment(pos, comment_spans):
-    for start, end in comment_spans:
-        if start <= pos < end:
+    for s, e in comment_spans:
+        if s <= pos < e:
             return True
     return False
 
@@ -184,10 +181,13 @@ def insert_global_import(encrypted_files):
                 lines = f.readlines()
             if any("import StringSecurity" in line for line in lines):
                 continue
-            insert_idx = 0
+            insert_idx = None
             for i, line in enumerate(lines):
                 if line.strip().startswith("import "):
-                    insert_idx = i + 1
+                    insert_idx = i
+                    break
+            if insert_idx is None:
+                insert_idx = 0
             lines.insert(insert_idx, "import StringSecurity\n")
             with open(path, "w", encoding="utf-8") as f:
                 f.writelines(lines)
@@ -211,15 +211,23 @@ def copy_StringSecurity_folder(source_root):
                     print(f"StringSecurity 이미 존재함: {target}")
                 return
 
+
 def load_excluded_set(path: str):
     excluded = defaultdict(set)
     with open(path, encoding='utf-8') as f:
-        for line in f:
-            if '->' in line and line.startswith("STR:"):
-                _, rest = line.split("STR:", 1)
-                file, string = rest.strip().split('->', 1)
-                abs_file = os.path.abspath(file.strip())
-                excluded[abs_file].add(string.strip().strip('"'))
+        text = f.read()
+
+    text = text.replace("STR ->", "STR:").replace("TR ->", "TR:")
+
+    pattern = re.compile(
+        r'^(?:STR|TR):\s*(?P<file>.*?)\s*->\s*(?P<lit>"""[\s\S]*?"""|"(?:\\.|[^"\\])*")\s*$',
+        re.MULTILINE
+    )
+
+    for m in pattern.finditer(text):
+        abs_file = os.path.abspath(m.group("file").strip())
+        literal = m.group("lit")
+        excluded[abs_file].add(literal)
     return excluded
 
 def load_excluded_numbers(path: str):
@@ -233,6 +241,23 @@ def load_excluded_numbers(path: str):
                 name_and_type, value = declaration.strip().split("=", 1)
                 result[abs_file][value.strip()] = name_and_type.strip()
     return result
+
+def load_excluded_lines(path: str):
+    mapping = defaultdict(set)
+    rx = re.compile(r'^(?:STR|TR|NUM)?\:?\s*(.+?\.swift):(\d+)\s*->', re.IGNORECASE)
+    with open(path, encoding='utf-8') as f:
+        for raw in f:
+            m = rx.match(raw.strip())
+            if not m:
+                continue
+            file_path = os.path.abspath(m.group(1))
+            ln = int(m.group(2))
+            mapping[file_path].add(ln)
+    return mapping
+
+def line_no_of(text: str, pos: int) -> int:
+    return text.count('\n', 0, pos) + 1
+
 
 def encrypt_and_insert(source_root: str, excluded_path: str):
     target_root = None
@@ -257,39 +282,100 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
         print("Swift 파일 없음")
         return
     count = 1 if len(swift_files) == 1 else 2 if len(swift_files) < 4 else 4
-    entry_path, entry_type = patch_entry(swift_files, count)
-    if not entry_path:
-        return
     key = ChaCha20Poly1305.generate_key()
     chunk_size = KEY_BYTE_LEN // count
     masks = [os.urandom(chunk_size) for _ in range(count)]
     chunks = [key[i*chunk_size:(i+1)*chunk_size if i < count-1 else KEY_BYTE_LEN] for i in range(count)]
     encoded_chunks = [bytes(c ^ m for c, m in zip(chunk, mask)) for chunk, mask in zip(chunks, masks)]
+    cipher = ChaCha20Poly1305(key)
+
+    excluded_map = load_excluded_set(excluded_path)
+    excluded_numbers = load_excluded_numbers(excluded_path)
+    excluded_lines = load_excluded_lines(excluded_path)
+
+    string_pattern = re.compile(r'("""(?:\\.|"(?!""")|[^"])*?"""|"(?:\\.|[^"\\])*")', re.DOTALL)
+    number_pattern = re.compile(r'(\b(?:let|var)\s+\w+(?::\s*[\w<>]+)?\s*=\s*)(\d+(\.\d+)?)')
+
+    for file_path in swift_files:
+        try:
+            with open(file_path, encoding="utf-8") as f:
+                content = f.read()
+            abs_path = os.path.abspath(file_path)
+            comment_spans = remove_comments_and_track(content)
+
+            ex_lines = excluded_lines.get(abs_path, set())
+            ex_contents = excluded_map.get(abs_path, set())
+            ex_nums = excluded_numbers.get(abs_path, {})
+
+            def replace_string(m):
+                ln = line_no_of(content, m.start())
+                if ln in ex_lines:
+                    return m.group(0)
+                if is_within_comment(m.start(), comment_spans):
+                    return m.group(0)
+
+                raw = m.group(0)
+
+                if raw in ex_contents:
+                    return raw
+                if raw.startswith('"""'):
+                    inner = raw[3:-3]
+                else:
+                    inner = raw[1:-1]
+                if inner in ex_contents:
+                    return raw
+
+                nonce = os.urandom(12)
+                ct = cipher.encrypt(nonce, inner.encode(), None)
+                b64 = base64.b64encode(nonce + ct).decode()
+                return f'SwingftEncryption.resolve("{b64}")'
+
+            def replace_number(m):
+                ln = line_no_of(content, m.start())
+                if ln in ex_lines:
+                    return m.group(0)
+                if is_within_comment(m.start(), comment_spans):
+                    return m.group(0)
+
+                prefix, number = m.group(1), m.group(2)
+                full_decl = ex_nums.get(number)
+                if not full_decl:
+                    return m.group(0)
+                inferred_type = full_decl.split(":")[1].strip() if ":" in full_decl else "Double"
+
+                tmp_match = re.match(r'"[^"]+"', f'"{number}"')
+                encrypted = replace_string(tmp_match)  
+                return f"{prefix}{inferred_type}({encrypted})!"
+
+            new_content = re.sub(string_pattern, replace_string, content)
+            new_content = re.sub(number_pattern, replace_number, new_content)
+
+            if new_content != content:
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(new_content)
+        except Exception as e:
+            print(f" 암호화 실패: {file_path} – {e}")
+
+    entry_path, entry_type = patch_entry(swift_files, count)
+    if not entry_path:
+        return
 
     module_dir = os.path.dirname(entry_path)
     same_module_files = [f for f in swift_files if f.startswith(module_dir + os.sep)]
 
     preferred_files = [f for f in same_module_files if f != entry_path]
-    fallback_files = same_module_files[:]
-
+    fallback_files = same_module_files[:] if same_module_files else swift_files[:]
     random.shuffle(preferred_files)
     random.shuffle(fallback_files)
 
     used_files = set()
-
     for i in range(count):
-        ef = mf = None
-
-        enc_candidates = [f for f in preferred_files if f not in used_files]
-        if not enc_candidates:
-            enc_candidates = [f for f in fallback_files if f not in used_files]
-        ef = enc_candidates[0] if enc_candidates else random.choice(fallback_files)
+        enc_file_candidates = [f for f in preferred_files if f not in used_files] or [f for f in fallback_files if f not in used_files] or [entry_path]
+        ef = enc_file_candidates[0]
         used_files.add(ef)
 
-        mask_candidates = [f for f in preferred_files if f not in used_files]
-        if not mask_candidates:
-            mask_candidates = [f for f in fallback_files if f not in used_files]
-        mf = mask_candidates[0] if mask_candidates else ef  # 동일 파일 fallback
+        mask_file_candidates = [f for f in preferred_files if f not in used_files] or [f for f in fallback_files if f not in used_files] or [ef]
+        mf = mask_file_candidates[0]
         used_files.add(mf)
 
         encoded = ", ".join(str(b) for b in encoded_chunks[i])
@@ -303,56 +389,13 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
         with open(mf, "a", encoding="utf-8") as f:
             f.write(code_m)
 
-
-
-    excluded_map = load_excluded_set(excluded_path)
-    excluded_numbers = load_excluded_numbers(excluded_path)
-    cipher = ChaCha20Poly1305(key)
-    string_pattern = re.compile(r'"(\\.|[^"\\])*"')
-    number_pattern = re.compile(r'(\b(?:let|var)\s+\w+(?::\s*[\w<>]+)?\s*=\s*)(\d+(\.\d+)?)')
-
-    for file_path in swift_files:
-        try:
-            with open(file_path, encoding="utf-8") as f:
-                content = f.read()
-            abs_path = os.path.abspath(file_path)
-
-            comment_spans = remove_comments_and_track(content)
-
-            def replace_string(m):
-                if is_within_comment(m.start(), comment_spans):
-                    return m.group(0)
-                raw = m.group(0)
-                clean = raw.strip('"')
-                if clean in excluded_map.get(abs_path, set()):
-                    return raw
-                nonce = os.urandom(12)
-                ct = cipher.encrypt(nonce, clean.encode(), None)
-                b64 = base64.b64encode(nonce + ct).decode()
-                return f'SwingftEncryption.resolve("{b64}")'
-
-            def replace_number(m):
-                prefix, number = m.group(1), m.group(2)
-                full_decl = excluded_numbers.get(abs_path, {}).get(number)
-                if not full_decl:
-                    return m.group(0)
-                inferred_type = full_decl.split(":")[1].strip() if ":" in full_decl else "Double"
-                encrypted = replace_string(re.match(r'"[^"]+"', f'"{number}"'))
-                return f"{prefix}{inferred_type}({encrypted})!"
-            new_content = re.sub(string_pattern, replace_string, content)
-            new_content = re.sub(number_pattern, replace_number, new_content)
-
-            if new_content != content:
-                with open(file_path, "w", encoding="utf-8") as f:
-                    f.write(new_content)
-        except Exception as e:
-            print(f" 암호화 실패: {file_path} – {e}")
-
     insert_global_import(swift_files)
     copy_StringSecurity_folder(source_root)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python SwingftEncryption.py <source_root> <excluded_json.path>")
+        print("Usage: python SwingftEncryption.py <source_root> <excluded_String.txt>")
         sys.exit(1)
     encrypt_and_insert(sys.argv[1], sys.argv[2])
+
