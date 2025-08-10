@@ -53,6 +53,54 @@ func saveToText(entries: [(String, String)], outputPath: String) {
     }
 }
 
+func saveToJSON(entries: [(String, String)], outputPath: String) {
+    // Convert entries like "STR: file:line" and value into JSON objects
+    struct Item: Codable {
+        let kind: String
+        let file: String
+        let line: Int
+        let value: String
+    }
+
+    func parseKey(_ key: String) -> (kind: String, file: String, line: Int) {
+        // Expected key formats:
+        // "STR: /path/to/File.swift:123"
+        // "NUM: /path/to/File.swift:45"
+        // Fallback if parsing fails.
+        let parts = key.split(separator: ":", maxSplits: 2, omittingEmptySubsequences: false)
+        if parts.count >= 3 {
+            let kind = String(parts[0]).trimmingCharacters(in: .whitespaces)
+            let file = String(parts[1]).trimmingCharacters(in: .whitespaces)
+            let lineStr = String(parts[2]).trimmingCharacters(in: .whitespaces)
+            let line = Int(lineStr) ?? 0
+            return (kind, file, line)
+        } else {
+            return ("STR", key, 0)
+        }
+    }
+
+    let items = entries.map { (k, v) -> Item in
+        let parsed = parseKey(k)
+        return Item(kind: parsed.kind, file: parsed.file, line: parsed.line, value: v)
+    }
+
+    do {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        let data = try encoder.encode(items)
+        if let jsonString = String(data: data, encoding: .utf8) {
+            try jsonString.write(toFile: outputPath, atomically: true, encoding: .utf8)
+            print("Saved JSON to \(outputPath)")
+        } else {
+            print("Failed to encode JSON string")
+        }
+    } catch {
+        print("Failed to save JSON: \(error)")
+    }
+}
+
+
+
 guard CommandLine.arguments.count >= 3 else {
     print("Usage: swift run <tool> <source-directory> <config-json-path>")
     exit(1)
@@ -70,10 +118,13 @@ let excludedKeywords = config?.shouldEncryptStrings == true ? config?.encryption
 
 for fileURL in swiftFiles {
     let file = fileURL.path
-    guard let source = try? String(contentsOfFile: file) else { continue }
+    guard let data = try? Data(contentsOf: fileURL) else { continue }
+       var source = String(data: data, encoding: .utf8) ?? ""
+       if source.hasPrefix("\u{FEFF}") { source.removeFirst() }        
+       source = source.replacingOccurrences(of: "\r\n", with: "\n")
+                      .replacingOccurrences(of: "\r", with: "\n")
 
-    let tree = Parser.parse(source: source)
-
+       let tree = Parser.parse(source: source)
     let globalVisitor = GlobalStringCollector(viewMode: .sourceAccurate, filePath: file)
     globalVisitor.walk(tree)
     allEntries.append(contentsOf: globalVisitor.globalStrings.map { ("STR: \($0.0)", $0.1) })
@@ -92,7 +143,7 @@ for fileURL in swiftFiles {
 
     let constVisitor = ConstantNumberExtractor(viewMode: .sourceAccurate, filePath: file)
     constVisitor.walk(tree)
-    allEntries.append(contentsOf: constVisitor.constants)
+    allEntries.append(contentsOf: constVisitor.constants.map { ("NUM: \($0.0)", $0.1) })
 
     let localizedExtractor = LocalizedStringExtractor(filePath: file)
     localizedExtractor.walk(tree)
@@ -143,13 +194,13 @@ func sortEntriesByFileAndLine(_ entries: [(String, String)]) -> [(String, String
 
 
 let sorted = sortEntriesByFileAndLine(allEntries)
-saveToText(entries: sorted, outputPath: "excluded_String.txt")
+saveToJSON(entries: sorted, outputPath: "excluded_String.json")
 
 
 let pythonScriptPath = "./SwingftEncryption.py"
 let process = Process()
 process.executableURL = URL(fileURLWithPath: "/usr/bin/python3")
-process.arguments = [pythonScriptPath, sourcePath, "excluded_String.txt"]
+process.arguments = [pythonScriptPath, sourcePath, "excluded_String.json"]
 let pipe = Pipe()
 process.standardOutput = pipe
 process.standardError = pipe
