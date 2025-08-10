@@ -78,7 +78,6 @@ final class GlobalStringCollector: SyntaxVisitor {
     override func visit(_ node: EnumDeclSyntax) -> SyntaxVisitorContinueKind {
         scopeDepth += 1
 
-        // 🔍 :String인 enum 안의 case 값 수집
         if node.inheritanceClause?.inheritedTypes.contains(where: {
             $0.type.trimmedDescription == "String"
         }) == true {
@@ -100,8 +99,12 @@ final class GlobalStringCollector: SyntaxVisitor {
 
     private func extractStringLiterals(from expr: ExprSyntax) {
         if let str = expr.as(StringLiteralExprSyntax.self) {
+            // 문자열 리터럴에서 수집하는 부분만 변경
             let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
-            globalStrings.append((filePath, raw))
+            let ln = SourceLoc.line(of: str, filePath: filePath)
+
+            globalStrings.append(("\(filePath):\(ln)", raw))
+
         }
         else if let array = expr.as(ArrayExprSyntax.self) {
             for element in array.elements {

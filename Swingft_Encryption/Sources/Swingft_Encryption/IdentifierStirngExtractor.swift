@@ -34,9 +34,11 @@ final class IdentifierStringExtractor: SyntaxVisitor {
             if let label = arg.label?.text,
                matchLabels.contains(label),
                let str = arg.expression.as(StringLiteralExprSyntax.self) {
-                let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
-                identifierStrings.append((filePath, raw))
-            }
+                   let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
+                   let ln = SourceLoc.line(of: str, filePath: filePath)
+
+                   identifierStrings.append(("\(filePath):\(ln)", raw))
+               }
         }
 
         return .visitChildren
@@ -65,7 +67,9 @@ final class IdentifierStringExtractor: SyntaxVisitor {
         for arg in node.arguments {
             if let str = arg.expression.as(StringLiteralExprSyntax.self) {
                 let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
-                identifierStrings.append((filePath, raw))
+                let ln = SourceLoc.line(of: str, filePath: filePath)
+
+                identifierStrings.append(("\(filePath):\(ln)", raw))
             }
         }
     }

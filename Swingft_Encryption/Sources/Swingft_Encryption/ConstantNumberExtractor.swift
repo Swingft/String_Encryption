@@ -1,4 +1,5 @@
 import SwiftSyntax
+import SwiftSyntax
 
 final class ConstantNumberExtractor: SyntaxVisitor {
     private(set) var constants: [(String, String)] = []
@@ -60,12 +61,12 @@ final class ConstantNumberExtractor: SyntaxVisitor {
             let pattern = binding.pattern.trimmedDescription
             let typeAnnotation = binding.typeAnnotation?.type.trimmedDescription
 
-            //  타입이 명시되지 않은 변수는 무시
             guard let type = typeAnnotation, allowedTypes.contains(type) else { continue }
 
             if let literal = findNumberLiteral(from: initializer.value) {
                 let declaration = "\(pattern): \(type) = \(literal.value)"
-                constants.append(("NUM: \(filePath)", declaration))
+                let ln = SourceLoc.line(of: node, filePath: filePath)
+                constants.append(("\(filePath):\(ln)", declaration))
             }
         }
 

@@ -1,4 +1,5 @@
 import Foundation
+import SwiftSyntax
 
 struct SwingftConfig: Decodable {
     struct Options: Decodable {
@@ -28,15 +29,17 @@ final class ConfigLoader {
 
     static func extractExcludedStrings(from source: String, filePath: String, excludedList: [String]) -> [(String, String)] {
         var result: [(String, String)] = []
+        let lines = source.components(separatedBy: .newlines)
 
-        for keyword in excludedList {
-            if source.contains(keyword) {
-                result.append((filePath, "\"\(keyword)\""))
+        for (idx, line) in lines.enumerated() {
+            for keyword in excludedList where line.contains(keyword) {
+                let ln = idx + 1
+                result.append(("\(filePath):\(ln)", "\"\(keyword)\""))
             }
         }
-
         return result
     }
+
 }
 
 struct ParsedConfig {

@@ -78,7 +78,8 @@ final class EntryPointStringExtractor: SyntaxVisitor {
     override func visit(_ node: StringLiteralExprSyntax) -> SyntaxVisitorContinueKind {
         if insideMainFunction || insideAppLaunchMethod {
             let raw = node.description.trimmingCharacters(in: .whitespacesAndNewlines)
-            entryPointStrings.append((filePath, raw))
+            let ln = SourceLoc.line(of: node, filePath: filePath)
+            entryPointStrings.append(("\(filePath):\(ln)", raw))
         }
         return .skipChildren
     }

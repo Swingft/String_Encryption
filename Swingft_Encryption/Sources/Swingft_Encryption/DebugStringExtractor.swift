@@ -33,8 +33,10 @@ final class DebugStringExtractor: SyntaxVisitor {
                 for arg in node.arguments {
                     if let str = arg.expression.as(StringLiteralExprSyntax.self) {
                         let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
-                        debugStrings.append((filePath, raw))
+                        let ln = SourceLoc.line(of: str, filePath: filePath)
+                        debugStrings.append(("\(filePath):\(ln)", raw))
                     }
+
                 }
             }
         }

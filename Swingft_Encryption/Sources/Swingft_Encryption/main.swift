@@ -2,6 +2,25 @@ import Foundation
 import SwiftSyntax
 import SwiftParser
 
+final class EmptyStringLineCollector: SyntaxVisitor {
+    private let filePath: String
+    private(set) var lines: [Int] = []
+
+    init(filePath: String) {
+        self.filePath = filePath
+        super.init(viewMode: .sourceAccurate)
+    }
+
+    override func visit(_ node: StringLiteralExprSyntax) -> SyntaxVisitorContinueKind {
+        let value = node.segments.description.trimmingCharacters(in: .whitespacesAndNewlines)
+        if value.isEmpty {
+            let ln = SourceLoc.line(of: node, filePath: filePath)
+            lines.append(ln)
+        }
+        return .skipChildren
+    }
+}
+
 func collectSwiftFiles(in directory: URL) -> [URL] {
     var swiftFiles: [URL] = []
 
@@ -80,11 +99,24 @@ for fileURL in swiftFiles {
     allEntries.append(contentsOf: localizedExtractor.excludedStrings.map { ("STR: \($0.0)", $0.1) })
 
     let attributeMatches = AttributeStringExtractor.extract(from: source)
-    allEntries.append(contentsOf: attributeMatches.map { ("STR", "\(file) -> \"\($0.0)\"") })
-    
-    let labeledExtractor = LabeledArgumentStringExtractor(viewMode: .sourceAccurate, filePath: file)
-    labeledExtractor.walk(tree)
-    allEntries.append(contentsOf: labeledExtractor.excludedStrings.map { ("STR: \($0.0)", $0.1) })
+    allEntries.append(contentsOf: attributeMatches.map {
+        let (text, line) = ($0.0, $0.1)
+        return ("STR: \(file):\(line)", "\"\(text)\"")
+    })
+
+    let lresExtractor = LocalizedStringResourceExtractor(filePath: file, source: source)
+    lresExtractor.walk(tree)
+    allEntries.append(contentsOf: lresExtractor.resources.map { ("STR: \($0.0)", $0.1) })
+
+    let emptyCollector = EmptyStringLineCollector(filePath: file)
+    emptyCollector.walk(tree)
+    allEntries.append(contentsOf: emptyCollector.lines.map { ("STR: \(file):\($0)", "\"\"") })
+
+
+    let contextExtractor = ContextStringExtractor(viewMode: .sourceAccurate, filePath: file)
+    contextExtractor.walk(tree)
+    allEntries.append(contentsOf: contextExtractor.excludedStrings.map { ("STR: \($0.0)", $0.1) })
+
 
     if !excludedKeywords.isEmpty {
         let matched = ConfigLoader.extractExcludedStrings(from: source, filePath: file, excludedList: excludedKeywords)
@@ -92,7 +124,27 @@ for fileURL in swiftFiles {
     }
 }
 
-saveToText(entries: allEntries, outputPath: "excluded_String.txt")
+func sortEntriesByFileAndLine(_ entries: [(String, String)]) -> [(String, String)] {
+    let rx = try! NSRegularExpression(pattern: #"^STR:\s*(.+?\.swift):(\d+)\s*->"#)
+    func parts(_ key: String) -> (String, Int)? {
+        let ns = key as NSString
+        guard let m = rx.firstMatch(in: key, range: NSRange(location: 0, length: ns.length)),
+              m.numberOfRanges >= 3
+        else { return nil }
+        let file = ns.substring(with: m.range(at: 1))
+        let line = Int(ns.substring(with: m.range(at: 2))) ?? 0
+        return (file, line)
+    }
+    return entries.sorted { a, b in
+        guard let pa = parts(a.0), let pb = parts(b.0) else { return a.0 < b.0 }
+        return pa.0 == pb.0 ? (pa.1 < pb.1) : (pa.0 < pb.0)
+    }
+}
+
+
+let sorted = sortEntriesByFileAndLine(allEntries)
+saveToText(entries: sorted, outputPath: "excluded_String.txt")
+
 
 let pythonScriptPath = "./SwingftEncryption.py"
 let process = Process()
