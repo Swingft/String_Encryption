@@ -1,7 +1,8 @@
 import Foundation
 import CryptoKit
 
-    public class SwingftEncryption {
+@available(iOS 13.0, macOS 10.15, *)
+public class SwingftEncryption {
         private static var cache: [String: String] = [:]
         private static var key: Data?
         
@@ -19,6 +20,7 @@ import CryptoKit
             return decrypted
         }
         
+        @available(iOS 13.0, macOS 10.15, *)
         fileprivate static func decrypt(base64: String) -> String {
             guard let key else {
                 assertionFailure("SwingftEncryption not configured with key")
@@ -46,7 +48,8 @@ import CryptoKit
     }
     
     
-    public final class EncryptedString: CustomStringConvertible, ExpressibleByStringLiteral {
+@available(iOS 13.0, macOS 10.15, *)
+public final class EncryptedString: CustomStringConvertible, ExpressibleByStringLiteral {
         private let base64: String
         private lazy var decrypted: String = {
             return SwingftEncryption.decrypt(base64: base64)
