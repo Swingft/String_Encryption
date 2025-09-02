@@ -1,3 +1,3 @@
 # String_Encryption
 
-    swift run Swingft_Encryption <your project path> <swingft_config.json path>
+    python run_Swingft_Encryption.py <프로젝트 경로> <Swingft_config.json path>

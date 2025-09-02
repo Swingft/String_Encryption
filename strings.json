@@ -1,0 +1,1058 @@
+[
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"카페\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"디저트\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "kind" : "STR",
+    "line" : 84,
+    "value" : "\"NoRecommend\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "kind" : "STR",
+    "line" : 94,
+    "value" : "\"yyyyMMdd\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/Restaurant\/RestaurantLocalDataSource.swift",
+    "kind" : "STR",
+    "line" : 16,
+    "value" : "\"json\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/Restaurant\/RestaurantRemoteDataSource.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/RemoteUrlPreset\/RemoteUrlPresetLocalDataSource.swift",
+    "kind" : "STR",
+    "line" : 11,
+    "value" : "\"remoteUrlPresetData\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 15,
+    "value" : "\"jbjb\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 16,
+    "value" : "\"RestaurantsLocalData_Distribution\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 17,
+    "value" : "\"https:\/\/www.dropbox.com\/s\/wslpk4btyqnjd72\/RestaurantsRemoteData_Distribution.json?dl=1\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 18,
+    "value" : "\"https:\/\/www.dropbox.com\/s\/auuf4kbztiyf2zp\/RestaurantsRemoteData_Test.json?dl=1\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 19,
+    "value" : "\"https:\/\/t.ly\/\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"https:\/\/radar-dev.appsu.it\/radar\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 26,
+    "value" : "\"peace\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 27,
+    "value" : "\"happy\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 28,
+    "value" : "\"bewildered\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 29,
+    "value" : "\"grief\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 30,
+    "value" : "\"sad\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 31,
+    "value" : "\"woebegone\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 32,
+    "value" : "\"approved\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"trust\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"respect\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 35,
+    "value" : "\"hate\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"disgust\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"bored\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 38,
+    "value" : "\"nervous\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"horror\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 40,
+    "value" : "\"extremeHorror\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"furious\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"angry\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 43,
+    "value" : "\"annoyed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 44,
+    "value" : "\"bothered\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"surprised\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 46,
+    "value" : "\"extremeSurprised\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 47,
+    "value" : "\"beware\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 48,
+    "value" : "\"lookingForward\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 49,
+    "value" : "\"interested\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 54,
+    "value" : "\"To make your feelings better\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 55,
+    "value" : "\"Today recommends\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 56,
+    "value" : "\"How about this dessert?\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"Try something else\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 61,
+    "value" : "\"Choose 3 or more feelings of you now.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 65,
+    "value" : "\"Remote URL\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 66,
+    "value" : "\"http:\/\/\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 68,
+    "value" : "\"Remote URL Preset\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 71,
+    "value" : "\"AntiCapture\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 72,
+    "value" : "\"Background Color of Captured\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"AppSwitcher Background Color\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 74,
+    "value" : "\"Disable AppSwitcherView Once\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 78,
+    "value" : "\"정보 없음\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 79,
+    "value" : "\"DONE\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 80,
+    "value" : "\"Setting\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 81,
+    "value" : "\"Apply\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 82,
+    "value" : "\"Reset\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 83,
+    "value" : "\"Clear\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 84,
+    "value" : "\"Preset\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 85,
+    "value" : "\"+\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"-\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 87,
+    "value" : "\"정말로 모든 프리셋 데이터를 삭제하시겠습니까?\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 88,
+    "value" : "\"삭제 확인\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 89,
+    "value" : "\"Activate\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 90,
+    "value" : "\"활성화 코드 입력\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 91,
+    "value" : "\"활성화\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 92,
+    "value" : "\"확인\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 93,
+    "value" : "\"취소\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 94,
+    "value" : "\"삭제\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "kind" : "STR",
+    "line" : 155,
+    "value" : "\"photo\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
+    "kind" : "STR",
+    "line" : 12,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
+    "kind" : "STR",
+    "line" : 12,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
+    "kind" : "STR",
+    "line" : 12,
+    "value" : "\"map_pin\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 40,
+    "value" : "\"Gotham-\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"Black\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"Bold\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 43,
+    "value" : "\"BookItalic\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 44,
+    "value" : "\"Light\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"Thin\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 46,
+    "value" : "\"ThinItalic\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 47,
+    "value" : "\"UltraItalic\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 48,
+    "value" : "\"XLight\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
+    "kind" : "STR",
+    "line" : 49,
+    "value" : "\"XLightItalic\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 40,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"Jailbreak Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 49,
+    "value" : "\"Frida Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 49,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 53,
+    "value" : "\"Debug Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 53,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"Hooking Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 61,
+    "value" : "\"Switch Control Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
+    "kind" : "STR",
+    "line" : 61,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 17,
+    "value" : "\"Authorization Denied\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"JP\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"CN\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"위치 권한이 결정되지 않았습니다.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 44,
+    "value" : "\"위치 권한이 제한되었습니다.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 46,
+    "value" : "\"위치 권한이 거부되었습니다.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 56,
+    "value" : "\"정확한 위치가 비활성화 되어있습니다.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 85,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 87,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 90,
+    "value" : "\"VPN Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 90,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 93,
+    "value" : "\"Proxy Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 93,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 96,
+    "value" : "\"Fake GPS Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 96,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 99,
+    "value" : "\"Country Detected\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
+    "kind" : "STR",
+    "line" : 99,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Model\/Feeling.swift",
+    "kind" : "STR",
+    "line" : 20,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Model\/Feeling.swift",
+    "kind" : "STR",
+    "line" : 20,
+    "value" : "\" \""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/ChooseCollectionViewCell.swift",
+    "kind" : "STR",
+    "line" : 15,
+    "value" : "\"ChooseCollectionViewCell\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/ChooseCollectionViewCell.swift",
+    "kind" : "STR",
+    "line" : 47,
+    "value" : "\"checkmark.circle.fill\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantTableViewCell.swift",
+    "kind" : "STR",
+    "line" : 20,
+    "value" : "\"RestaurantTableViewCell\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantTableViewCell.swift",
+    "kind" : "STR",
+    "line" : 111,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
+    "kind" : "STR",
+    "line" : 14,
+    "value" : "\"RemoteUrlPresetButtonView\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
+    "kind" : "STR",
+    "line" : 126,
+    "value" : "\"transform.rotation\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
+    "kind" : "STR",
+    "line" : 132,
+    "value" : "\"shakeAnimation\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
+    "kind" : "STR",
+    "line" : 142,
+    "value" : "\"shakeAnimation\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/DetailImageCollectionViewCell.swift",
+    "kind" : "STR",
+    "line" : 16,
+    "value" : "\"DetailImageCollectionViewCell\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantCollectionViewCell.swift",
+    "kind" : "STR",
+    "line" : 15,
+    "value" : "\"RestaurantCollectionViewCell\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/DetailImageUpScaleCollectionViewCell.swift",
+    "kind" : "STR",
+    "line" : 15,
+    "value" : "\"DetailImageUpScaleCollectionViewCell\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 26,
+    "value" : "\"Enable\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 27,
+    "value" : "\"Disable\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"Black\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 51,
+    "value" : "\"System\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 74,
+    "value" : "\"Black\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 75,
+    "value" : "\"System\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 98,
+    "value" : "\"Disable\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
+    "kind" : "STR",
+    "line" : 99,
+    "value" : "\"Enable\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/SelectedFeelingsStackViewContentView.swift",
+    "kind" : "STR",
+    "line" : 15,
+    "value" : "\"SelectedFeelingsCollectionViewContentView\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/LoadingView.swift",
+    "kind" : "STR",
+    "line" : 14,
+    "value" : "\"loading_circle_white\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 44,
+    "value" : "\"[STEALIEN] 정상\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 46,
+    "value" : "\"[STEALIEN] 앱 아이디 초기화 필요\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 48,
+    "value" : "\"[STEALIEN] 디버깅 탐지\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"[STEALIEN] 탈옥 탐지\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 52,
+    "value" : "\"[STEALIEN] 위변조 탐지\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 54,
+    "value" : "\"[STEALIEN] 위협 탐지\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 67,
+    "value" : "\"[STEALIEN] 정상\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 70,
+    "value" : "\"[STEALIEN] FFFF\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"[STEALIEN] 1000\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 76,
+    "value" : "\"[STEALIEN] 1100\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 79,
+    "value" : "\"[STEALIEN] 1200\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
+    "kind" : "STR",
+    "line" : 82,
+    "value" : "\"[STEALIEN] 1300\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/BaseViewController.swift",
+    "kind" : "STR",
+    "line" : 104,
+    "value" : "\"Stealien\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/BaseViewController.swift",
+    "kind" : "STR",
+    "line" : 122,
+    "value" : "\"sharedAntiCaptureChanged\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/ResultViewController.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"Great Pick!\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 62,
+    "value" : "\"xmark_circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 100,
+    "value" : "\"식당 이름\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 117,
+    "value" : "\"영업 여부\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 124,
+    "value" : "\"star\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 132,
+    "value" : "\"0.0\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 139,
+    "value" : "\"phone\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 148,
+    "value" : "\"12-345-6789\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 164,
+    "value" : "\"분류\\n기타 뭐시기\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 181,
+    "value" : "\"가격대\\n가격-가격\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 198,
+    "value" : "\"영업 시간\\n월-금: 00:00 - 00:00 토-일: 00:00 - 00:00\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 215,
+    "value" : "\"휴일\\n요일\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 232,
+    "value" : "\"\\n메뉴1: 00,000원\\n메뉴2: 00,000원\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 258,
+    "value" : "\"기타 정보\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 462,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 478,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 512,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 538,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 544,
+    "value" : "\", \""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 544,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 555,
+    "value" : "\"Last Order: \""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 559,
+    "value" : "\"Break Time: \""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 563,
+    "value" : "\"주차 공간: \""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "kind" : "STR",
+    "line" : 566,
+    "value" : "\"\\n\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainViewController.swift",
+    "kind" : "STR",
+    "line" : 77,
+    "value" : "\"gearshape\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainViewController.swift",
+    "kind" : "STR",
+    "line" : 260,
+    "value" : "\"test\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/RestaurantLocationDetailViewController.swift",
+    "kind" : "STR",
+    "line" : 76,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "kind" : "STR",
+    "line" : 412,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "kind" : "STR",
+    "line" : 442,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "kind" : "STR",
+    "line" : 496,
+    "value" : "\"\""
+  }
+]

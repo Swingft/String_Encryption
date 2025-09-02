@@ -3,7 +3,7 @@ import CryptoKit
 
 @available(iOS 13.0, macOS 10.15, *)
 public final class SwingftEncryption {
-    private static let cache = NSCache<NSString, NSString>()   // thread-safe
+    private static let cache = NSCache<NSString, NSString>()   
     private static var key: Data?
 
     public static func configure(key: Data) {

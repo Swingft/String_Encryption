@@ -99,7 +99,7 @@ final class GlobalStringCollector: SyntaxVisitor {
 
     private func extractStringLiterals(from expr: ExprSyntax) {
         if let str = expr.as(StringLiteralExprSyntax.self) {
-            // 문자열 리터럴에서 수집하는 부분만 변경
+          
             let raw = str.description.trimmingCharacters(in: .whitespacesAndNewlines)
             let ln = SourceLoc.line(of: str, filePath: filePath)
 

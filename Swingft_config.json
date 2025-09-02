@@ -1,4 +1,9 @@
 {
+    "_comment_path": "...",
+    "project":{
+        "input":"",
+        "output":""
+    },
   "options": {
     "Obfuscation_classNames": true,
     "Obfuscation_methodNames": true,
@@ -14,7 +19,19 @@
       "MyImportantClass"
     ],
     "encryption": [
-      "parkkyuna"
+      "AvenirNext-Bold"
+    ]
+  },
+  "_comment_include": "...",
+  "include": {
+    "obfuscation": [
+      "AppDelegate",
+      "ViewController",
+      "MyImportantClass"
+    ],
+    "encryption": [
+       "yyyy-MM-dd HH:mm:ssZZZZZ",
+       "parkkyuna"
     ]
   }
 }

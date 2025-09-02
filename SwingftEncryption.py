@@ -1,3 +1,4 @@
+
 import os
 import re
 import sys
@@ -17,63 +18,43 @@ except ImportError:
 KEY_BYTE_LEN = 32
 
 
-def load_rules_from_json(path: str):
-    ex_strings = defaultdict(set)
-    ex_numbers = defaultdict(dict)
-    ex_lines   = defaultdict(set)
+
+def load_included_from_json(path: str):
+    """
+    strings.json에서 kind == 'STR' 인 항목만 포함 목록으로 로드한다.
+    반환:
+      - in_strings: { abs_file: set(raw_string_literal) }
+      - in_lines:   { abs_file: set(line_numbers) }
+    """
+    in_strings = defaultdict(set)
+    in_lines   = defaultdict(set)
 
     with open(path, encoding='utf-8') as f:
         items = json.load(f)
 
     for obj in items:
+        if (obj.get("kind") or "").upper() != "STR":
+            continue
+
         file_raw = obj.get("file", "")
+        
         file_raw = re.sub(r"^(?:STR|NUM)\s*:\s*", "", file_raw)
         abs_file = os.path.realpath(file_raw)
 
-        kind = (obj.get("kind") or "").upper()
         line = obj.get("line")
         value = obj.get("value")
 
-        if not abs_file or not kind or value is None:
+        if not abs_file or value is None:
             continue
 
+        
         if isinstance(line, int) and line > 0:
-            ex_lines[abs_file].add(line)
+            in_lines[abs_file].add(line)
 
-        if kind == "STR":
-            ex_strings[abs_file].add(str(value))
-        elif kind == "NUM":
-            m = re.search(
-                r'(?P<name>\w+)\s*:\s*(?P<type>[\w\.<>]+)\s*=\s*(?P<num>[-+]?\d+(?:\.\d+)?)',
-                str(value)
-            )
-            if m:
-                name = m.group('name')
-                typ  = m.group('type')
-                num  = m.group('num')
-                ex_numbers[abs_file][num] = f"{name}: {typ}"
-            else:
-                m2 = re.search(r'([-+]?\d+(?:\.\d+)?)', str(value))
-                if m2:
-                    num = m2.group(1)
-                    ex_numbers[abs_file][num] = "value: Double"
+        in_strings[abs_file].add(str(value))
 
-    return ex_strings, ex_numbers, ex_lines
+    return in_strings, in_lines
 
-
-def load_excluded_set(path: str):
-    ex_strings, _, _ = load_rules_from_json(path)
-    return ex_strings, set()
-
-
-def load_excluded_numbers(path: str):
-    _, ex_numbers, _ = load_rules_from_json(path)
-    return ex_numbers
-
-
-def load_excluded_lines(path: str):
-    _, _, ex_lines = load_rules_from_json(path)
-    return ex_lines
 
 
 def insert_import_and_key(path, chunk_count: int):
@@ -109,14 +90,6 @@ enum SwingftKey {{
         f.writelines(lines)
 
 
-def remove_comments_and_track(code: str):
-    return []
-
-
-def is_within_comment(pos, comment_spans):
-    return False
-
-
 def detect_main_entry(files):
     for path in files:
         try:
@@ -124,6 +97,7 @@ def detect_main_entry(files):
                 content = f.read()
             if re.search(r'@main\s+(struct|class)\s+\w+\s*:\s*App', content):
                 return path, 'swiftui'
+           
             if re.search(r'class\s+\w+\s*:\s*UIResponder\s*,\s*UIApplicationDelegate', content):
                 return path, 'uikit'
         except Exception:
@@ -198,7 +172,6 @@ def patch_uikit_delegate(path):
                     f.writelines(lines)
         return
 
-
     did_start, did_end = find_method_range('didFinishLaunchingWithOptions')
     if did_start != -1:
         if not has_config_call(did_start, did_end):
@@ -269,8 +242,8 @@ def patch_entry(files, chunk_count):
     return entry_path, entry_type
 
 
-def insert_global_import(encrypted_files):
-    for path in encrypted_files:
+def insert_global_import(swift_files):
+    for path in swift_files:
         try:
             with open(path, encoding='utf-8') as f:
                 lines = f.readlines()
@@ -303,18 +276,21 @@ def copy_StringSecurity_folder(source_root):
                 return
 
 
+
 def line_no_of(text: str, pos: int) -> int:
     return text.count('\n', 0, pos) + 1
 
 
-def encrypt_and_insert(source_root: str, excluded_path: str):
+def encrypt_and_insert(source_root: str, included_json_path: str):
+   
+    in_strings, _ = load_included_from_json(included_json_path)
+    STRING_RE = re.compile(r'("""(?:\\.|"(?!""")|[^"])*?"""|"(?:\\.|[^"\\])*")', re.DOTALL)
+
+
     target_root = None
-    for dirpath, dirnames, filenames in os.walk(source_root):
-        for d in dirnames:
-            if d.endswith('.xcodeproj') or d.endswith('.xcworkspace'):
-                target_root = dirpath
-                break
-        if target_root:
+    for dirpath, dirnames, _ in os.walk(source_root):
+        if any(d.endswith(('.xcodeproj', '.xcworkspace')) for d in dirnames):
+            target_root = dirpath
             break
     if not target_root:
         return
@@ -322,108 +298,87 @@ def encrypt_and_insert(source_root: str, excluded_path: str):
     swift_files = []
     for dirpath, dirnames, filenames in os.walk(target_root):
         dirnames[:] = [d for d in dirnames if not d.startswith("Framework")]
-        for file in filenames:
-            if file.endswith(".swift") and not file.startswith(".") and file != "Package.swift":
-                swift_files.append(os.path.join(dirpath, file))
+        for fn in filenames:
+            if fn.endswith(".swift") and fn != "Package.swift" and not fn.startswith("."):
+                swift_files.append(os.path.join(dirpath, fn))
     if not swift_files:
         return
 
-    count = 1 if len(swift_files) == 1 else 2 if len(swift_files) < 4 else 4
+   
     key = ChaCha20Poly1305.generate_key()
-    chunk_size = KEY_BYTE_LEN // count
-    masks = [os.urandom(chunk_size) for _ in range(count)]
-    chunks = [key[i*chunk_size:(i+1)*chunk_size if i < count-1 else KEY_BYTE_LEN] for i in range(count)]
-    encoded_chunks = [bytes(c ^ m for c, m in zip(chunk, mask)) for chunk, mask in zip(chunks, masks)]
     cipher = ChaCha20Poly1305(key)
 
-    excluded_map, _ = load_excluded_set(excluded_path)
-    excluded_numbers = load_excluded_numbers(excluded_path)
-    excluded_lines = load_excluded_lines(excluded_path)
-
-    string_pattern = re.compile(r'("""(?:\\.|"(?!""")|[^"])*?"""|"(?:\\.|[^"\\])*")', re.DOTALL)
-    number_pattern = re.compile(r'(\b(?:let|var)\s+\w+(?::\s*[\w<>]+)?\s*=\s*)(\d+(\.\d+)?)')
-
     for file_path in swift_files:
+        if "StringSecurity" in file_path:
+            continue  
+
         try:
             with open(file_path, encoding="utf-8") as f:
                 content = f.read()
-            abs_path = os.path.realpath(file_path)
-            ex_lines_set = excluded_lines.get(abs_path, set())
-            ex_contents = excluded_map.get(abs_path, set())
-            ex_nums = excluded_numbers.get(abs_path, {})
 
-            def match_overlaps_excluded(m):
-                start_ln = line_no_of(content, m.start())
-                end_ln   = line_no_of(content, m.end()-1)
-                return any(ln in ex_lines_set for ln in range(start_ln, end_ln+1))
+            abs_path = os.path.realpath(file_path)
+            in_contents = in_strings.get(abs_path, set())
 
             def replace_string(m):
-                if m.group(0) in ex_contents:
-                    return m.group(0)
-                if match_overlaps_excluded(m):
-                    return m.group(0)
                 raw = m.group(0)
+
+              
+                around = content[max(0, m.start()-30):m.start()]
+                if 'SwingftEncryption.resolve("' in around:
+                    return raw
+
+             
+                if raw not in in_contents:
+                    return raw
+
+                
                 inner = raw[3:-3] if raw.startswith('"""') else raw[1:-1]
                 nonce = os.urandom(12)
                 ct = cipher.encrypt(nonce, inner.encode(), None)
                 b64 = base64.b64encode(nonce + ct).decode()
                 return f'SwingftEncryption.resolve("{b64}")'
 
-            def replace_number(m):
-                if match_overlaps_excluded(m):
-                    return m.group(0)
-                prefix, number = m.group(1), m.group(2)
-                full_decl = ex_nums.get(number)
-                if not full_decl:
-                    return m.group(0)
-                inferred_type = full_decl.split(":")[1].strip() if ":" in full_decl else "Double"
-                encrypted = replace_string(re.match(r'"[^"]+"', f'"{number}"'))
-                return f"{prefix}{inferred_type}({encrypted})!"
-
-            new_content = re.sub(string_pattern, replace_string, content)
-            new_content = re.sub(number_pattern, replace_number, new_content)
-
+            new_content = re.sub(STRING_RE, replace_string, content)
             if new_content != content:
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(new_content)
-        except:
+
+        except Exception:
+           
             pass
 
-    entry_path, _ = patch_entry(swift_files, count)
+    count = 1 if len(swift_files) == 1 else 2 if len(swift_files) < 4 else 4
+    chunk_size = 32 // count
+    masks = [os.urandom(chunk_size) for _ in range(count)]
+    chunks = [key[i*chunk_size:(i+1)*chunk_size if i < count-1 else 32] for i in range(count)]
+    encoded_chunks = [bytes(c ^ m for c, m in zip(chunk, mask)) for chunk, mask in zip(chunks, masks)]
+
+    
+    entry_path, entry_type = patch_entry(swift_files, count)
     if not entry_path:
         return
 
+    
     module_dir = os.path.dirname(entry_path)
     same_module_files = [f for f in swift_files if f.startswith(module_dir + os.sep)]
-    preferred_files = [f for f in same_module_files if f != entry_path]
-    fallback_files = same_module_files[:] if same_module_files else swift_files[:]
-    random.shuffle(preferred_files)
-    random.shuffle(fallback_files)
+    preferred = [f for f in same_module_files if f != entry_path] or same_module_files or swift_files
+    random.shuffle(preferred)
 
-    used_files = set()
+    used = set()
     for i in range(count):
-        ef = (preferred_files or fallback_files or [entry_path])[0]
-        if ef in used_files:
-            ef = (fallback_files or [entry_path])[0]
-        used_files.add(ef)
-        mf = (preferred_files or fallback_files or [ef])[0]
-        if mf in used_files:
-            mf = (fallback_files or [ef])[0]
-        used_files.add(mf)
-        encoded = ", ".join(str(b) for b in encoded_chunks[i])
-        mask = ", ".join(str(b) for b in masks[i])
+        ef = next((p for p in preferred if p not in used), entry_path); used.add(ef)
+        mf = next((p for p in preferred if p not in used), ef);        used.add(mf)
         with open(ef, "a", encoding="utf-8") as f:
-            f.write(f"\nextension SwingftKey {{\n    static let encoded{i+1}: [UInt8] = [{encoded}]\n}}\n")
+            f.write(f"\nextension SwingftKey {{\n    static let encoded{i+1}: [UInt8] = [{', '.join(str(b) for b in encoded_chunks[i])}]\n}}\n")
         with open(mf, "a", encoding="utf-8") as f:
-            f.write(f"\nextension SwingftKey {{\n    static let mask{i+1}: [UInt8] = [{mask}]\n}}\n")
+            f.write(f"\nextension SwingftKey {{\n    static let mask{i+1}: [UInt8] = [{', '.join(str(b) for b in masks[i])}]\n}}\n")
 
+  
     insert_global_import(swift_files)
     copy_StringSecurity_folder(source_root)
 
-
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python SwingftEncryption.py <source_root> <excluded_String.json>")
+        print("Usage: python SwingftEncryption.py <source_root> <strings.json>")
         sys.exit(1)
     encrypt_and_insert(sys.argv[1], sys.argv[2])
-

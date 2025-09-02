@@ -20,7 +20,8 @@ final class IdentifierStringExtractor: SyntaxVisitor {
         let matchCallees: Set<String> = [
             "performSegue",
             "NSClassFromString",
-            "NSSelectorFromString"
+            "NSSelectorFromString",
+            
         ]
 
         if let calledExpr = node.calledExpression.as(DeclReferenceExprSyntax.self),
