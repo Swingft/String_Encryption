@@ -18,14 +18,27 @@ except ImportError:
 KEY_BYTE_LEN = 32
 
 
+SWIFT_SIMPLE_ESCAPES = {
+    r'\n': '\n',
+    r'\r': '\r',
+    r'\t': '\t',
+    r'\"': '"',
+    r"\'": "'",
+    r'\\': '\\',
+    r'\0': '\0',
+}
+
+def swift_unescape(s: str) -> str:
+    import re
+    def _u(m):
+        return chr(int(m.group(1), 16))
+    s = re.sub(r'\\u\{([0-9A-Fa-f]+)\}', _u, s)
+    for k, v in SWIFT_SIMPLE_ESCAPES.items():
+        s = s.replace(k, v)
+    return s
+
 
 def load_included_from_json(path: str):
-    """
-    strings.json에서 kind == 'STR' 인 항목만 포함 목록으로 로드한다.
-    반환:
-      - in_strings: { abs_file: set(raw_string_literal) }
-      - in_lines:   { abs_file: set(line_numbers) }
-    """
     in_strings = defaultdict(set)
     in_lines   = defaultdict(set)
 
@@ -333,8 +346,9 @@ def encrypt_and_insert(source_root: str, included_json_path: str):
 
                 
                 inner = raw[3:-3] if raw.startswith('"""') else raw[1:-1]
+                inner_runtime = swift_unescape(inner)
                 nonce = os.urandom(12)
-                ct = cipher.encrypt(nonce, inner.encode(), None)
+                ct = cipher.encrypt(nonce, inner_runtime.encode(), None)
                 b64 = base64.b64encode(nonce + ct).decode()
                 return f'SwingftEncryption.resolve("{b64}")'
 
