@@ -172,6 +172,15 @@ func processFile(_ url: URL) -> ([StringLiteralRecord], [LocKey:String], [String
         v.walk(tree)
         for (k, _) in v.interpolatedStrings { excludedLocations.insert(k); mark(&exclusionReasons, k, "interpolated") }
     }
+    do {
+        let v = ImageLiteralStringExtractor(viewMode: .sourceAccurate, filePath: url.path)
+        v.walk(tree)
+        for k in v.locations {
+            excludedLocations.insert(k)
+            mark(&exclusionReasons, k, "image_literal")
+        }
+    }
+
      
     do {
         let v = EnumRawValueCaseStringExtractor(viewMode: .sourceAccurate, filePath: url.path)
