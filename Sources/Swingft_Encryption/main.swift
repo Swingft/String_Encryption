@@ -58,7 +58,7 @@ private func collectSwiftFiles(under root: URL) -> [URL] {
 private func loadConfig(at url: URL) -> SwingftConfig {
     let fm = FileManager.default
     guard fm.fileExists(atPath: url.path) else {
-        fputs("지정한 설정 파일이 존재하지 않습니다: \(url.path)\n", stderr)
+        fputs("The specified configuration file does not exist: \(url.path)\n", stderr)
         exit(1)
     }
     do {
@@ -127,9 +127,15 @@ func processFile(_ url: URL) -> ([StringLiteralRecord], [LocKey:String], [String
 
     
     do {
-        let lines = AttributeStringExtractor.extract(from: src).map { $0.1 }
-        for ln in lines { let k = "\(url.path):\(ln)"; excludedLocations.insert(k); mark(&exclusionReasons, k, "attribute") }
+    let v = AttributeStringLineCollector(filePath: url.path, source: src)
+    v.walk(tree)
+    for ln in v.lines {
+        let k = "\(url.path):\(ln)"
+        excludedLocations.insert(k)
+        mark(&exclusionReasons, k, "attribute")
+     }
     }
+
 
     
     do {
@@ -180,6 +186,14 @@ func processFile(_ url: URL) -> ([StringLiteralRecord], [LocKey:String], [String
             mark(&exclusionReasons, k, "image_literal")
         }
     }
+    do {
+    let v = ResourceLikeExcluder(viewMode: .sourceAccurate, filePath: url.path)
+    v.walk(tree)
+    for k in v.locations {
+        excludedLocations.insert(k)
+        mark(&exclusionReasons, k, "resource_like")
+    }
+    }
 
      
     do {
@@ -219,7 +233,7 @@ func main() {
     let conflicts = inEncSetRaw.intersection(exEncSet)
     if !conflicts.isEmpty {
         for s in conflicts.sorted() {
-            fputs("[Warning] include/encryption & exclude/encryption 동일한 문자열 작성: \"\(s)\" → 문자열 암호화 제외 대상으로 처리합니다.\n", stderr)
+            fputs("[Warning] include/encryption & exclude/encryption create the same string: \"\(s)\" Processing with string encryption exclusion \n", stderr)
         }
     }
     let inEncSet = inEncSetRaw.subtracting(conflicts)
@@ -242,7 +256,7 @@ func main() {
     }
     let removedByConfig = targetRecords.count - postExcluded.count
     if removedByConfig > 0 {
-        fputs("Swingft_config.json의 exclude 목록으로 \(removedByConfig)개 문자열이 암호화 대상에서 제외되었습니다.\n", stderr)
+        fputs("Using the exclude list in Swingft_config.json \(removedByConfig)strings have been excluded from encryption.\n", stderr)
     }
 
   
@@ -250,7 +264,7 @@ func main() {
         for target in inEncSet.sorted() {
             let occurrences = allRecords.filter { stripQuotes($0.value) == target }
             if occurrences.isEmpty {
-                fputs("[Warning] 암호화 필수지만 프로젝트에서 발견되지 않음: \"\(target)\" 암호화 불가능\n", stderr)
+                fputs("[Warning] Encryption required, but not found in the project: \"\(target)\" Unable to encrypt\n", stderr)
                 continue
             }
 
@@ -271,7 +285,7 @@ func main() {
 
             if !canEncrypt {
     
-                fputs("[Warning] 암호화 필수지만 암호화시 문제 발생 : \"\(target)\" 암호화 불가능\n", stderr)
+                fputs("[Warning] Encryption is required, but encryption is a problem: \"\(target)\" Unable to encrypt\n", stderr)
             }
         }
     }

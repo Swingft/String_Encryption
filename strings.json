@@ -1,1058 +1,1412 @@
 [
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Order\/Order.swift",
     "kind" : "STR",
-    "line" : 34,
-    "value" : "\"카페\""
+    "line" : 227,
+    "value" : "\"paperplane\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Order\/Order.swift",
     "kind" : "STR",
-    "line" : 34,
-    "value" : "\"디저트\""
+    "line" : 229,
+    "value" : "\"timer\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Order\/Order.swift",
     "kind" : "STR",
-    "line" : 84,
-    "value" : "\"NoRecommend\""
+    "line" : 231,
+    "value" : "\"checkmark.circle\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewModel\/MainViewModel.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Order\/Order.swift",
     "kind" : "STR",
-    "line" : 94,
-    "value" : "\"yyyyMMdd\""
+    "line" : 233,
+    "value" : "\"shippingbox\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/Restaurant\/RestaurantLocalDataSource.swift",
-    "kind" : "STR",
-    "line" : 16,
-    "value" : "\"json\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/Restaurant\/RestaurantRemoteDataSource.swift",
-    "kind" : "STR",
-    "line" : 39,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/DataSource\/RemoteUrlPreset\/RemoteUrlPresetLocalDataSource.swift",
-    "kind" : "STR",
-    "line" : 11,
-    "value" : "\"remoteUrlPresetData\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 15,
-    "value" : "\"jbjb\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Donut\/Ingredients\/Glaze.swift",
     "kind" : "STR",
     "line" : 16,
-    "value" : "\"RestaurantsLocalData_Distribution\""
+    "value" : "\"glaze\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Donut\/Ingredients\/Dough.swift",
     "kind" : "STR",
-    "line" : 17,
-    "value" : "\"https:\/\/www.dropbox.com\/s\/wslpk4btyqnjd72\/RestaurantsRemoteData_Distribution.json?dl=1\""
+    "line" : 20,
+    "value" : "\"dough\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Donut\/Ingredients\/Topping.swift",
     "kind" : "STR",
-    "line" : 18,
-    "value" : "\"https:\/\/www.dropbox.com\/s\/auuf4kbztiyf2zp\/RestaurantsRemoteData_Test.json?dl=1\""
+    "line" : 16,
+    "value" : "\"topping\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Donut\/Donut.swift",
     "kind" : "STR",
-    "line" : 19,
-    "value" : "\"https:\/\/t.ly\/\""
+    "line" : 204,
+    "value" : "\"com.example.apple-samplecode.donut\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 21,
-    "value" : "\"https:\/\/radar-dev.appsu.it\/radar\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
     "kind" : "STR",
     "line" : 26,
-    "value" : "\"peace\""
+    "value" : "\"header\/Sky Start\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
     "kind" : "STR",
     "line" : 27,
-    "value" : "\"happy\""
+    "value" : "\"header\/Sky End\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
     "kind" : "STR",
-    "line" : 28,
-    "value" : "\"bewildered\""
+    "line" : 112,
+    "value" : "\"1 Small Clouds\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 29,
-    "value" : "\"grief\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 30,
-    "value" : "\"sad\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 31,
-    "value" : "\"woebegone\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 32,
-    "value" : "\"approved\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 33,
-    "value" : "\"trust\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 34,
-    "value" : "\"respect\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 35,
-    "value" : "\"hate\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 36,
-    "value" : "\"disgust\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 37,
-    "value" : "\"bored\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 38,
-    "value" : "\"nervous\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 39,
-    "value" : "\"horror\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 40,
-    "value" : "\"extremeHorror\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 41,
-    "value" : "\"furious\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 42,
-    "value" : "\"angry\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 43,
-    "value" : "\"annoyed\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 44,
-    "value" : "\"bothered\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 45,
-    "value" : "\"surprised\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 46,
-    "value" : "\"extremeSurprised\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 47,
-    "value" : "\"beware\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 48,
-    "value" : "\"lookingForward\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 49,
-    "value" : "\"interested\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 54,
-    "value" : "\"To make your feelings better\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 55,
-    "value" : "\"Today recommends\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 56,
-    "value" : "\"How about this dessert?\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 57,
-    "value" : "\"Try something else\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 61,
-    "value" : "\"Choose 3 or more feelings of you now.\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 65,
-    "value" : "\"Remote URL\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 66,
-    "value" : "\"http:\/\/\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 68,
-    "value" : "\"Remote URL Preset\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 71,
-    "value" : "\"AntiCapture\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 72,
-    "value" : "\"Background Color of Captured\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 73,
-    "value" : "\"AppSwitcher Background Color\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 74,
-    "value" : "\"Disable AppSwitcherView Once\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 78,
-    "value" : "\"정보 없음\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 79,
-    "value" : "\"DONE\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 80,
-    "value" : "\"Setting\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 81,
-    "value" : "\"Apply\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 82,
-    "value" : "\"Reset\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 83,
-    "value" : "\"Clear\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 84,
-    "value" : "\"Preset\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 85,
-    "value" : "\"+\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 86,
-    "value" : "\"-\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 87,
-    "value" : "\"정말로 모든 프리셋 데이터를 삭제하시겠습니까?\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 88,
-    "value" : "\"삭제 확인\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 89,
-    "value" : "\"Activate\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 90,
-    "value" : "\"활성화 코드 입력\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 91,
-    "value" : "\"활성화\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 92,
-    "value" : "\"확인\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 93,
-    "value" : "\"취소\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 94,
-    "value" : "\"삭제\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Constants.swift",
-    "kind" : "STR",
-    "line" : 155,
-    "value" : "\"photo\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
-    "kind" : "STR",
-    "line" : 12,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
-    "kind" : "STR",
-    "line" : 12,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/MKMapView+setPlaceMark.swift",
-    "kind" : "STR",
-    "line" : 12,
-    "value" : "\"map_pin\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 40,
-    "value" : "\"Gotham-\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 41,
-    "value" : "\"Black\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 42,
-    "value" : "\"Bold\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 43,
-    "value" : "\"BookItalic\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 44,
-    "value" : "\"Light\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 45,
-    "value" : "\"Thin\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 46,
-    "value" : "\"ThinItalic\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 47,
-    "value" : "\"UltraItalic\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 48,
-    "value" : "\"XLight\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/Extension\/UIFont+changeSystemFont.swift",
-    "kind" : "STR",
-    "line" : 49,
-    "value" : "\"XLightItalic\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 40,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 42,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 45,
-    "value" : "\"Jailbreak Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 45,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 49,
-    "value" : "\"Frida Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 49,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 53,
-    "value" : "\"Debug Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 53,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 57,
-    "value" : "\"Hooking Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 57,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 61,
-    "value" : "\"Switch Control Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STAVSuitManager.swift",
-    "kind" : "STR",
-    "line" : 61,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 17,
-    "value" : "\"Authorization Denied\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 34,
-    "value" : "\"JP\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 34,
-    "value" : "\"CN\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 42,
-    "value" : "\"위치 권한이 결정되지 않았습니다.\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 44,
-    "value" : "\"위치 권한이 제한되었습니다.\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 46,
-    "value" : "\"위치 권한이 거부되었습니다.\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 56,
-    "value" : "\"정확한 위치가 비활성화 되어있습니다.\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 85,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 87,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 90,
-    "value" : "\"VPN Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 90,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 93,
-    "value" : "\"Proxy Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 93,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 96,
-    "value" : "\"Fake GPS Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 96,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 99,
-    "value" : "\"Country Detected\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Util\/STVPNBlockManager.swift",
-    "kind" : "STR",
-    "line" : 99,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Model\/Feeling.swift",
-    "kind" : "STR",
-    "line" : 20,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/Model\/Feeling.swift",
-    "kind" : "STR",
-    "line" : 20,
-    "value" : "\" \""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/ChooseCollectionViewCell.swift",
-    "kind" : "STR",
-    "line" : 15,
-    "value" : "\"ChooseCollectionViewCell\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/ChooseCollectionViewCell.swift",
-    "kind" : "STR",
-    "line" : 47,
-    "value" : "\"checkmark.circle.fill\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantTableViewCell.swift",
-    "kind" : "STR",
-    "line" : 20,
-    "value" : "\"RestaurantTableViewCell\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantTableViewCell.swift",
-    "kind" : "STR",
-    "line" : 111,
-    "value" : "\"\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
-    "kind" : "STR",
-    "line" : 14,
-    "value" : "\"RemoteUrlPresetButtonView\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
-    "kind" : "STR",
-    "line" : 126,
-    "value" : "\"transform.rotation\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
-    "kind" : "STR",
-    "line" : 132,
-    "value" : "\"shakeAnimation\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RemoteUrlPresetButtonView.swift",
-    "kind" : "STR",
-    "line" : 142,
-    "value" : "\"shakeAnimation\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/DetailImageCollectionViewCell.swift",
-    "kind" : "STR",
-    "line" : 16,
-    "value" : "\"DetailImageCollectionViewCell\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/RestaurantCollectionViewCell.swift",
-    "kind" : "STR",
-    "line" : 15,
-    "value" : "\"RestaurantCollectionViewCell\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/DetailImageUpScaleCollectionViewCell.swift",
-    "kind" : "STR",
-    "line" : 15,
-    "value" : "\"DetailImageUpScaleCollectionViewCell\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 26,
-    "value" : "\"Enable\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 27,
-    "value" : "\"Disable\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 50,
-    "value" : "\"Black\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 51,
-    "value" : "\"System\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 74,
-    "value" : "\"Black\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 75,
-    "value" : "\"System\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 98,
-    "value" : "\"Disable\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/AntiCaptureSettingView.swift",
-    "kind" : "STR",
-    "line" : 99,
-    "value" : "\"Enable\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/SelectedFeelingsStackViewContentView.swift",
-    "kind" : "STR",
-    "line" : 15,
-    "value" : "\"SelectedFeelingsCollectionViewContentView\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/View\/LoadingView.swift",
-    "kind" : "STR",
-    "line" : 14,
-    "value" : "\"loading_circle_white\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 44,
-    "value" : "\"[STEALIEN] 정상\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 46,
-    "value" : "\"[STEALIEN] 앱 아이디 초기화 필요\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 48,
-    "value" : "\"[STEALIEN] 디버깅 탐지\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 50,
-    "value" : "\"[STEALIEN] 탈옥 탐지\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 52,
-    "value" : "\"[STEALIEN] 위변조 탐지\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 54,
-    "value" : "\"[STEALIEN] 위협 탐지\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 67,
-    "value" : "\"[STEALIEN] 정상\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 70,
-    "value" : "\"[STEALIEN] FFFF\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 73,
-    "value" : "\"[STEALIEN] 1000\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 76,
-    "value" : "\"[STEALIEN] 1100\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 79,
-    "value" : "\"[STEALIEN] 1200\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/AppDelegate.swift",
-    "kind" : "STR",
-    "line" : 82,
-    "value" : "\"[STEALIEN] 1300\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/BaseViewController.swift",
-    "kind" : "STR",
-    "line" : 104,
-    "value" : "\"Stealien\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/BaseViewController.swift",
-    "kind" : "STR",
-    "line" : 122,
-    "value" : "\"sharedAntiCaptureChanged\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/ResultViewController.swift",
-    "kind" : "STR",
-    "line" : 34,
-    "value" : "\"Great Pick!\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 62,
-    "value" : "\"xmark_circle\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 100,
-    "value" : "\"식당 이름\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
     "kind" : "STR",
     "line" : 117,
-    "value" : "\"영업 여부\""
+    "value" : "\"2 Medium Clouds\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
     "kind" : "STR",
-    "line" : 124,
+    "line" : 122,
+    "value" : "\"3 Mountains\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 127,
+    "value" : "\"4 Big Clouds\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 131,
+    "value" : "\"5 Ocean\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 135,
+    "value" : "\"6 Balloons\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 139,
+    "value" : "\"7 Trees\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 148,
+    "value" : "\"9 Foreground\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 183,
+    "value" : "\"In Scroll View\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Brand\/BrandHeader.swift",
+    "kind" : "STR",
+    "line" : 191,
+    "value" : "\"Full Size\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Account\/AccountStore.swift",
+    "kind" : "STR",
+    "line" : 16,
+    "value" : "\"FoodTruck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Account\/AccountStore.swift",
+    "kind" : "STR",
+    "line" : 16,
+    "value" : "\"Food Truck accounts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Account\/AccountStore.swift",
+    "kind" : "STR",
+    "line" : 115,
+    "value" : "\"example.com\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Account\/AccountStore.swift",
+    "kind" : "STR",
+    "line" : 118,
+    "value" : "\"passkey challenge\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Store\/StoreActor.swift",
+    "kind" : "STR",
+    "line" : 12,
+    "value" : "\"socialfeedplus.monthly\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Store\/StoreActor.swift",
+    "kind" : "STR",
+    "line" : 13,
+    "value" : "\"socialfeedplus.yearly\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/FoodTruckKit\/Sources\/Store\/StoreActor.swift",
+    "kind" : "STR",
+    "line" : 14,
+    "value" : "\"feature.annualhistory\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"Popular\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"person.3\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"Trending\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"chart.line.uptrend.xyaxis\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"Popular\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"person.3\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/RecommendedParkingSpotCard.swift",
+    "kind" : "STR",
+    "line" : 60,
+    "value" : "\"sun.max\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 25,
+    "value" : "\"Will rain soon...\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 25,
+    "value" : "\"No chance of rain today\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"sun.max\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityView.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"sun.max\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityView.swift",
+    "kind" : "STR",
+    "line" : 111,
+    "value" : "\"Other data sources\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/City\/CityView.swift",
+    "kind" : "STR",
+    "line" : 111,
+    "value" : "\"https:\/\/weather-data.apple.com\/legal-attribution.html\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 54,
+    "value" : "\"My Action\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 54,
     "value" : "\"star\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 78,
+    "value" : "\"Donut\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 82,
+    "value" : "\"Flavor Profile\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 110,
+    "value" : "\"Ingredients\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 111,
+    "value" : "\"Dough\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 118,
+    "value" : "\"Glaze\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutEditor.swift",
+    "kind" : "STR",
+    "line" : 129,
+    "value" : "\"Topping\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 20,
+    "value" : "\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 81,
+    "value" : "\"Name\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 96,
+    "value" : "\"New Donut\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 97,
+    "value" : "\"Create Donut\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 97,
+    "value" : "\"plus\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 101,
+    "value" : "\"Layout\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 109,
+    "value" : "\"Sort\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 110,
+    "value" : "\"Name\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 110,
+    "value" : "\"textformat\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 112,
+    "value" : "\"Popularity\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 112,
+    "value" : "\"trophy\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 114,
+    "value" : "\"Flavor\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 114,
+    "value" : "\"fork.knife\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
+    "kind" : "STR",
+    "line" : 120,
+    "value" : "\"Timeframe\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
     "kind" : "STR",
     "line" : 132,
-    "value" : "\"0.0\""
+    "value" : "\"Flavor\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
     "kind" : "STR",
-    "line" : 139,
-    "value" : "\"phone\""
+    "line" : 141,
+    "value" : "\"Layout Options\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 148,
-    "value" : "\"12-345-6789\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
     "kind" : "STR",
     "line" : 164,
-    "value" : "\"분류\\n기타 뭐시기\""
+    "value" : "\"square.grid.2x2\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/DonutGallery.swift",
     "kind" : "STR",
-    "line" : 181,
-    "value" : "\"가격대\\n가격-가격\""
+    "line" : 165,
+    "value" : "\"list.bullet\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopDonutSalesChart.swift",
     "kind" : "STR",
-    "line" : 198,
-    "value" : "\"영업 시간\\n월-금: 00:00 - 00:00 토-일: 00:00 - 00:00\""
+    "line" : 39,
+    "value" : "\"Donut\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopDonutSalesChart.swift",
     "kind" : "STR",
-    "line" : 215,
-    "value" : "\"휴일\\n요일\""
+    "line" : 40,
+    "value" : "\"Sales\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopDonutSalesChart.swift",
     "kind" : "STR",
-    "line" : 232,
-    "value" : "\"\\n메뉴1: 00,000원\\n메뉴2: 00,000원\\n\""
+    "line" : 43,
+    "value" : "\"BarBottomColor\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopFiveDonutsChart.swift",
     "kind" : "STR",
-    "line" : 258,
-    "value" : "\"기타 정보\""
+    "line" : 35,
+    "value" : "\"Today\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopFiveDonutsChart.swift",
     "kind" : "STR",
-    "line" : 462,
+    "line" : 37,
+    "value" : "\"Week\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopFiveDonutsChart.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"Month\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopFiveDonutsChart.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"Year\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Donut\/TopFiveDonutsView.swift",
+    "kind" : "STR",
+    "line" : 22,
+    "value" : "\"Timeframe\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 53,
+    "value" : "\"Truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 53,
+    "value" : "\"box.truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"Orders\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"shippingbox\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 61,
+    "value" : "\"Social Feed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 61,
+    "value" : "\"text.bubble\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 65,
+    "value" : "\"Account\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 65,
+    "value" : "\"person.crop.circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 69,
+    "value" : "\"Sales History\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 69,
+    "value" : "\"clock\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 72,
+    "value" : "\"Donuts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 82,
+    "value" : "\"Donut Editor\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 82,
+    "value" : "\"slider.horizontal.3\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"Top 5\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"trophy\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 90,
+    "value" : "\"Cities\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/Sidebar.swift",
+    "kind" : "STR",
+    "line" : 93,
+    "value" : "\"building.2\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/ContentView.swift",
+    "kind" : "STR",
+    "line" : 64,
+    "value" : "\"com.example.apple-samplecode.Food-Truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Navigation\/ContentView.swift",
+    "kind" : "STR",
+    "line" : 64,
+    "value" : "\"url\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckOrdersCard.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"New Orders\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckOrdersCard.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"shippingbox\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeader.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"Orders\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeader.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"shippingbox\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"Title 1\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"star\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 40,
+    "value" : "\"Title 2\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 40,
+    "value" : "\"square\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"Title 3\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/CardNavigationHeaderLabelStyle.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckSocialFeedCard.swift",
+    "kind" : "STR",
+    "line" : 24,
+    "value" : "\"Social Feed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckSocialFeedCard.swift",
+    "kind" : "STR",
+    "line" : 24,
+    "value" : "\"text.bubble\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 24,
+    "value" : "\"Forecast\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 24,
+    "value" : "\"cloud.sun\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 55,
+    "value" : "\"Hour\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 56,
+    "value" : "\"Hour\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 60,
+    "value" : "\"Mask\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 66,
+    "value" : "\"Date\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 67,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 68,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 84,
+    "value" : "\"Date\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 85,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 121,
+    "value" : "\"Hour\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 122,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/Cards\/TruckWeatherCard.swift",
+    "kind" : "STR",
+    "line" : 123,
+    "value" : "\"Temperature\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 29,
+    "value" : "\"Timeframe\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 30,
+    "value" : "\"2 Weeks\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 30,
+    "value" : "\"calendar\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"Month\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"calendar\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"lock\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"Year\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"calendar\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryView.swift",
+    "kind" : "STR",
+    "line" : 36,
+    "value" : "\"lock\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryChart.swift",
+    "kind" : "STR",
+    "line" : 22,
+    "value" : "\"Day\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryChart.swift",
+    "kind" : "STR",
+    "line" : 23,
+    "value" : "\"Sales\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryChart.swift",
+    "kind" : "STR",
+    "line" : 25,
+    "value" : "\"Location\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SalesHistoryChart.swift",
+    "kind" : "STR",
+    "line" : 27,
+    "value" : "\"Location\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SocialFeedView.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"Highlighted Posts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SocialFeedView.swift",
+    "kind" : "STR",
+    "line" : 39,
+    "value" : "\"Posts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SocialFeedView.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"Subscription Options\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Truck\/SocialFeedView.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"plus.bubble\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderDetailView.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"Status\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderDetailView.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"Donuts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderDetailView.swift",
+    "kind" : "STR",
+    "line" : 93,
+    "value" : "\"Order preparation activity.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderDetailView.swift",
+    "kind" : "STR",
+    "line" : 128,
+    "value" : "\"Donuts are done!\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderDetailView.swift",
+    "kind" : "STR",
+    "line" : 129,
+    "value" : "\"Time to take them out of the oven.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 27,
+    "value" : "\"Order\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"Donuts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"Status\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 49,
+    "value" : "\"Date\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 56,
+    "value" : "\"Details\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 59,
+    "value" : "\"View Details\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 59,
+    "value" : "\"list.bullet.below.rectangle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 68,
+    "value" : "\"Complete Order\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 68,
+    "value" : "\"checkmark\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"Details\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"ellipsis.circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersTable.swift",
+    "kind" : "STR",
+    "line" : 105,
     "value" : "\"\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderCompleteView.swift",
     "kind" : "STR",
-    "line" : 478,
+    "line" : 24,
+    "value" : "\"CFBundleShortVersionString\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrderCompleteView.swift",
+    "kind" : "STR",
+    "line" : 68,
+    "value" : "\"Done\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 15,
     "value" : "\"\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
     "kind" : "STR",
-    "line" : 512,
+    "line" : 74,
+    "value" : "\"New\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 80,
+    "value" : "\"Preparing\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 86,
+    "value" : "\"Ready\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 92,
+    "value" : "\"Completed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 112,
+    "value" : "\"View Details\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 112,
+    "value" : "\"list.bullet.below.rectangle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 124,
+    "value" : "\"View Details\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 124,
+    "value" : "\"checkmark.circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Orders\/OrdersView.swift",
+    "kind" : "STR",
+    "line" : 130,
+    "value" : "\"Select\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 41,
+    "value" : "\"In-app purchase support\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"In-app purchase support\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 42,
+    "value" : "\"questionmark.circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 46,
+    "value" : "\"Purchases\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 47,
+    "value" : "\"Restore missing purchases\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 58,
+    "value" : "\"Sign out\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 59,
+    "value" : "\"Sign Out\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 66,
+    "value" : "\"Use existing account\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 67,
+    "value" : "\"Sign In\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"Create new account\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/AccountView.swift",
+    "kind" : "STR",
+    "line" : 74,
+    "value" : "\"Sign Up\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 30,
     "value" : "\"\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
     "kind" : "STR",
-    "line" : 538,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 544,
-    "value" : "\", \""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 544,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 555,
-    "value" : "\"Last Order: \""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 559,
-    "value" : "\"Break Time: \""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 563,
-    "value" : "\"주차 공간: \""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/DetailViewController.swift",
-    "kind" : "STR",
-    "line" : 566,
-    "value" : "\"\\n\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainViewController.swift",
-    "kind" : "STR",
-    "line" : 77,
-    "value" : "\"gearshape\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainViewController.swift",
-    "kind" : "STR",
-    "line" : 260,
-    "value" : "\"test\""
-  },
-  {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/RestaurantLocationDetailViewController.swift",
-    "kind" : "STR",
-    "line" : 76,
+    "line" : 31,
     "value" : "\"\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
     "kind" : "STR",
-    "line" : 412,
+    "line" : 36,
+    "value" : "\"User name\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"User name\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 50,
+    "value" : "\"Password\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 51,
+    "value" : "\"Password\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 63,
+    "value" : "\"Use Passkey\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 64,
+    "value" : "\"Use Passkey\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 70,
+    "value" : "\"\"\"\n                    When you sign up with a passkey, all you need is a user name. \\\n                    The passkey will be available on all of your devices.\n                    \"\"\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 73,
+    "value" : "\"person.badge.key.fill\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 84,
+    "value" : "\"Sign Up\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Account\/SignUpView.swift",
+    "kind" : "STR",
+    "line" : 92,
+    "value" : "\"Cancel\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/App.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"Food Truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/App.swift",
+    "kind" : "STR",
+    "line" : 45,
+    "value" : "\"box.truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"Settings\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 22,
+    "value" : "\"Highlight Social Feed+ posts\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 23,
+    "value" : "\"Advanced engagement tools\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 24,
+    "value" : "\"Social-media providers\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"Subscription support\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 33,
+    "value" : "\"questionmark.circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"Subscription support\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 38,
+    "value" : "\"Restore missing purchases\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"Dismiss\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 57,
+    "value" : "\"xmark\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 113,
+    "value" : "\"Your subscription\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 122,
+    "value" : "\"Manage subscription\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SocialFeedPlusSettings.swift",
+    "kind" : "STR",
+    "line" : 126,
+    "value" : "\"https:\/\/apps.apple.com\/account\/subscriptions\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/StoreSupportView.swift",
+    "kind" : "STR",
+    "line" : 22,
+    "value" : "\"Manage subscription\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/StoreSupportView.swift",
+    "kind" : "STR",
+    "line" : 26,
+    "value" : "\"Refund purchases\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/StoreSupportView.swift",
+    "kind" : "STR",
+    "line" : 31,
+    "value" : "\"Restore missing purchases\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SubscriptionStoreView.swift",
+    "kind" : "STR",
+    "line" : 81,
     "value" : "\"\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SubscriptionStoreView.swift",
     "kind" : "STR",
-    "line" : 442,
-    "value" : "\"\""
+    "line" : 286,
+    "value" : "\"checkmark.circle.fill\""
   },
   {
-    "file" : "\/Users\/parkkyuna\/StealionSample\/UIKit+SPM_2\/StealPlateSwift\/ViewController\/MainSettingViewController.swift",
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SubscriptionStoreView.swift",
     "kind" : "STR",
-    "line" : 496,
-    "value" : "\"\""
+    "line" : 286,
+    "value" : "\"circle\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/SubscriptionStoreView.swift",
+    "kind" : "STR",
+    "line" : 346,
+    "value" : "\"Redeem an offer\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/UnlockFeatureView.swift",
+    "kind" : "STR",
+    "line" : 100,
+    "value" : "\"Dismiss\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/App\/Store\/UnlockFeatureView.swift",
+    "kind" : "STR",
+    "line" : 100,
+    "value" : "\"xmark\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/OrdersWidget.swift",
+    "kind" : "STR",
+    "line" : 30,
+    "value" : "\"Orders\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/OrdersWidget.swift",
+    "kind" : "STR",
+    "line" : 34,
+    "value" : "\"Orders\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/OrdersWidget.swift",
+    "kind" : "STR",
+    "line" : 35,
+    "value" : "\"Information about Food Truck's orders and daily quotas.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/WidgetColors.swift",
+    "kind" : "STR",
+    "line" : 11,
+    "value" : "\"AccentColor\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/WidgetColors.swift",
+    "kind" : "STR",
+    "line" : 12,
+    "value" : "\"AccentColorDimmed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/DailyDonutWidget.swift",
+    "kind" : "STR",
+    "line" : 14,
+    "value" : "\"Daily Donut\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/DailyDonutWidget.swift",
+    "kind" : "STR",
+    "line" : 22,
+    "value" : "\"Daily Donut\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/DailyDonutWidget.swift",
+    "kind" : "STR",
+    "line" : 23,
+    "value" : "\"Showcasing the latest trending donuts.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/ParkingSpotAccessory.swift",
+    "kind" : "STR",
+    "line" : 14,
+    "value" : "\"Parking Spot\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/ParkingSpotAccessory.swift",
+    "kind" : "STR",
+    "line" : 20,
+    "value" : "\"Parking Spot\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/ParkingSpotAccessory.swift",
+    "kind" : "STR",
+    "line" : 21,
+    "value" : "\"Information about your Food Truck's parking spot.\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/ParkingSpotAccessory.swift",
+    "kind" : "STR",
+    "line" : 55,
+    "value" : "\"box.truck\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 37,
+    "value" : "\"LightIndigo\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 71,
+    "value" : "\"LiveActivityBackground\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 71,
+    "value" : "\"AccentColorDimmed\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 137,
+    "value" : "\"LightIndigo\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 143,
+    "value" : "\"1234\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 143,
+    "value" : "\"activity name\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 152,
+    "value" : "\"Compact\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 156,
+    "value" : "\"Expanded\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 160,
+    "value" : "\"Notification\""
+  },
+  {
+    "file" : "\/Users\/parkkyuna\/StealionSample\/sample-food-truck\/Widgets\/TruckActivityWidget.swift",
+    "kind" : "STR",
+    "line" : 164,
+    "value" : "\"Minimal\""
   }
 ]
